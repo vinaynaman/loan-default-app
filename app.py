@@ -14,10 +14,7 @@ from katonic.fs import FeatureStore
 
 import pickle
 
-response = requests.get(url='https://katonic.ai/favicon.ico')
-im = Image.open(BytesIO(response.content))
 st.set_page_config(page_title='Bank Loan Default Prediction',
-                   page_icon=im,
                    layout='wide',
                    initial_sidebar_state='auto')
 st.set_option('deprecation.showPyplotGlobalUse', False)
